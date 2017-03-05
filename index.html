@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html>
 <head>
   <title>Vicaratech</title>
@@ -14,7 +15,7 @@
       //Navigation
      menu: '#menu',
      lockAnchors: false,
-     anchors:['firstPage', 'secondPage'],
+     anchors:['firstPage', 'secondPage', 'thirdPage'],
      navigation: true,
      navigationPosition: 'left',
      navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -85,6 +86,7 @@
     });
   })
   </script>
+  <script src="scripts/kai.js"></script>
 </head>
 <body>
   <div id="fullpage">
@@ -93,16 +95,22 @@
         <h1>Vicaratech</h1>
       </div>
     </div>
-    <div class="section">
+    <div class="section" id="secondSection">
       Second section
     </div>
-    <div class="section third-section fp-auto-height">
-      Hello!
+    <div class="section third-section" id="thirdSection">
       <div class="third-section-background">
         <div class="third-section-prop">
-
+          <img src="public/images/kai.png">
         </div>
       </div>
+    </div>
+    <div class="section" id="fourthSection">
+        <div class="fourth-section-background">
+          <div class="fourth-section-prop">
+            <img src="public/images/kai_expanded.png">
+          </div>
+        </div>
     </div>
   </div>
 </body>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vicaratech: Control the world around you.</title>
+    <!--All the stylesheets to follow-->
+    <link rel="stylesheet" href="bower_components/jQuery.scrollSections/build/css/jquery.scrollSections-0.4.3.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <!--ALl the scripts to follow-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jQuery.scrollSections/example/js/plugins.js"></script>
+    <script src="bower_components/jQuery.scrollSections/build/js/jquery.scrollSections-0.4.3.min.js"></script>
+</head>
+<body>
+    <nav id="scrollsections-navigation">
+        <a href="#main_page" title="">Home</a>
+        <a href="#project_page" title="">Kai</a>
+    </nav>
+    <section class="scrollsections" id="main_page">
+        <span class="title">Vicaratech</span>
+    </section>
+    <section class="scrollsections" id="project_page">
+        <div class="kai">
+            <img src="public/images/kai.png">
+        </div>
+    </section>
+    <section class="scrollsections">
+        Hello again.
+    </section>
+    <script>
+        $(document).ready(function () {
+            $('section.scrollsections').scrollSections({
+                createNavigation:false,
+                navigation:true,
+                mousewheel:true
+            });
+            $(window).scroll(function (e) {
+                var evt = window.event || e //equalize event object
+                evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible
+                var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
+                console.log('I am here.')
+                if(($(window).scrollTop())>700){
+                    console.log($(window).scrollTop());
+                    if(delta<0){
+                        console.log('Scrolled down');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
