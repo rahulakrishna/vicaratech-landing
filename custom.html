@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <title>Vicaratech</title>
+  <!--All the stylesheets should follow-->
+  <!-- <link rel="stylesheet" href="./bower_components/fullpage.js/dist/jquery.fullpage.css"/> -->
+  <link rel="stylesheet" href="./styles/main.css"/>
+  <!--All the script tags should follow-->
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- <script src="./bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script> -->
+  <script>
+  $(document).ready(function(){
+    console.log('JQuery working!');
+    var lastScrollTop=0;
+    $(window).scroll(function(){
+      console.log($(window).scrollTop()+'-'+lastScrollTop+'='+($(window).scrollTop()-lastScrollTop));
+      if(($(window).scrollTop()-lastScrollTop)>0){
+        lastScrollTop=$(window).scrollTop();
+        if($(window).scrollTop()>2 && $(window).scrollTop()<100){
+          $('#firstPage').css({
+            position:'fixed',
+            top:'0px',
+            transition:'all 1s'
+          })
+        }
+      }
+      else if($(window).scrollTop()<405){
+        lastScrollTop=$(window).scrollTop();
+
+        if($(window).scrollTop()>2 && $(window).scrollTop()<100){
+          $('#firstPage').css({
+            position:'fixed',
+            top:'100%',
+            transition:'all 1s'
+          })
+        }
+      }
+    })
+  })
+  </script>
+  <style>
+  html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  #fullpage{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #03fab2;
+
+  }
+  #firstPage{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fa324d;
+    transition: all 1s;
+    top:100%;
+  }
+  #secondPage{
+    z-index: 2;
+    position: absolute;
+    top:300%;
+  }
+  </style>
+</head>
+<body>
+  <div class="scroll-firers" id="fullpage">
+    Hello!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  <div class="firstPage" id="firstPage">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  <div class="secondPage" id="secondPage">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "Vicaratech_Landing",
+  "homepage": "https://github.com/rahulakrishna/vicara-landing",
+  "authors": [
+    "Rahul Krishna <rkbalu524@gmail.com>"
+  ],
+  "description": "A Landing page for Vicaratech.",
+  "main": "index.html",
+  "keywords": [
+    "vicara",
+    "animation",
+    "stuff"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.0"
+  }
+}

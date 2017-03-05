@@ -1,0 +1,33 @@
+$font-stack:'Roboto';
+$title-color:red;
+
+*{
+  font-family: $font-stack;
+}
+.first-section{
+  background: url('../public/images/bg.jpg');
+  .title{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    h1{
+      font-weight: 100;
+      font-size: 72px;
+      color:$title-color;
+      text-shadow: 2px 2px 5px red;
+    }
+  }
+}
+
+#fp-nav{
+  ul{
+    li{
+      a{
+        span{
+          background: red;
+        }
+      }
+    }
+  }
+}
