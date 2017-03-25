@@ -1,105 +1,100 @@
-html {
-  width: 100%;
-  height: 100%; }
-  html body {
-    font-family: sans-serif;
+html body {
+  overflow: hidden !important; }
+  html body .firstPage .fp-tableCell {
+    vertical-align: inherit !important; }
+  html body .firstPage .content {
+    background: #1163e9 !important;
     width: 100%;
     height: 100%;
-    overflow-x: hidden; }
-    html body .firstPage {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      min-height: 100%;
-      background: #1163e9; }
-      html body .firstPage .meet-kai {
-        width: auto;
-        height: 123px;
-        font-family: sans-serif;
-        font-size: 174.5px;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: center;
-        color: #ffffff;
-        margin: auto;
-        padding-top: 200px;
-        text-align: center; }
-        html body .firstPage .meet-kai .kai {
-          position: absolute;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-          margin: auto;
-          top: 50%; }
-      html body .firstPage .down-arrow {
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        margin: auto;
-        bottom: 5%; }
-    html body .secondPage {
-      background-color: #ffffff;
+    position: fixed;
+    top: 0px; }
+  html body .firstPage .meet-kai {
+    width: auto;
+    height: 123px;
+    font-family: "sans-serif";
+    font-size: 174.5px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 150px;
+    margin: auto;
+    text-align: center; }
+    html body .firstPage .meet-kai .kai {
       position: absolute;
-      top: 100%;
-      min-height: 120%;
-      width: 100%; }
-      html body .secondPage .content .text {
-        font-size: 18px;
-        position: absolute;
-        top: 45%;
-        left: -50%;
-        width: 322px;
-        margin-left: 100px; }
-      html body .secondPage .content .kai {
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        margin: auto;
-        top: 40%; }
-      html body .secondPage .content .meet-kai {
-        position: fixed;
-        top: 40%;
-        right: -50%;
-        font-size: 95.5px;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1;
-        letter-spacing: normal;
-        text-align: right;
-        color: #000000; }
-        html body .secondPage .content .meet-kai .kai-text {
-          color: #1163e9; }
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      margin: auto;
+      top: 50%; }
+  html body .firstPage .down-arrow {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: auto;
+    bottom: 5%; }
+  html body .secondPage .fp-tableCell {
+    vertical-align: inherit !important; }
+  html body .secondPage .content .text {
+    font-size: 18px;
+    position: absolute;
+    top: 43%;
+    left: -50%;
+    width: 320px;
+    margin-left: 100px; }
+  html body .secondPage .content .kai {
+    position: fixed;
+    opacity: 0;
+    transition: all 1s;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: auto;
+    top: 40%; }
+  html body .secondPage .content .meet-kai {
+    position: fixed;
+    top: 40%;
+    right: -100%;
+    font-size: 95.5px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000; }
+    html body .secondPage .content .meet-kai .kai-text {
+      color: #1163e9; }
+  html body .thirdPage {
+    overflow: hidden; }
     html body .thirdPage .content {
-      background-color: #ffffff;
-      position: absolute;
-      top: 220%;
-      min-height: 100%;
-      width: 100%; }
+      background-color: #ffffff; }
       html body .thirdPage .content .text {
         font-size: 18px;
         position: absolute;
+        left: -50%;
         top: 45%;
         width: 322px;
         margin-left: 100px; }
       html body .thirdPage .content .hand {
-        position: absolute;
+        position: fixed;
+        opacity: 0;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         margin: auto;
         top: -50px; }
         html body .thirdPage .content .hand img {
-          width: 70%; }
+          width: 90%;
+          height: 100%; }
       html body .thirdPage .content .smart-connect {
         position: absolute;
         top: 40%;
-        right: 100px;
+        right: -100%;
         font-size: 95.5px;
         font-weight: bold;
         font-style: normal;
@@ -110,16 +105,15 @@ html {
         color: #000000; }
         html body .thirdPage .content .smart-connect .connect-text {
           color: #1163e9; }
+  html body .fourthPage {
+    overflow: hidden; }
     html body .fourthPage .content {
-      background-color: #ffffff;
-      position: absolute;
-      top: 300%;
-      min-height: 100%;
-      width: 100%; }
+      background-color: #ffffff; }
       html body .fourthPage .content .text {
         font-size: 18px;
         position: absolute;
         top: 45%;
+        left: -50%;
         width: 322px;
         margin-left: 100px; }
       html body .fourthPage .content .hand {
@@ -130,12 +124,12 @@ html {
         margin: auto;
         top: -25px; }
         html body .fourthPage .content .hand img {
-          width: 70%; }
+          width: 90%; }
       html body .fourthPage .content .smart-connect {
         position: absolute;
         top: 40%;
-        right: 100px;
-        font-size: 95.5px;
+        right: -100%;
+        font-size: 90px;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -145,5 +139,7 @@ html {
         color: #000000; }
         html body .fourthPage .content .smart-connect .connect-text {
           color: #1163e9; }
+  html body .media .slick-prev:before, html body .media .slick-next:before {
+    color: red !important; }
 
 /*# sourceMappingURL=main.css.map */

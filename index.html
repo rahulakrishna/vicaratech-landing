@@ -3,21 +3,19 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
   <title>Vicaratech</title>
   <!--All the stylesheets should follow-->
   <link rel="stylesheet" href="./bower_components/fullpage.js/dist/jquery.fullpage.css"/>
   <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css"/>
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css"/>
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css"/>
   <link rel="stylesheet" href="./styles/main.css"/>
-  <!--All the script tags should follow-->
-  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/materialize/dist/js/materialize.js"></script>
-  <script>
-
-  </script>
-  <script src="scripts/kai.js"></script>
 </head>
 <body>
-  <div class="firstPage">
+  <div id="fullpage">
+  <div class="firstPage section">
+    <div class="content">
     <div class="meet-kai">
       MEET KAI
       <div class="kai">
@@ -27,8 +25,9 @@
     <div class="down-arrow">
       <img src="public/images/sort-down_2017-03-22/sort-down.png"/>
     </div>
+    </div>
   </div>
-  <div class="secondPage">
+  <div class="secondPage section">
     <div class="content">
       <div class="text">
         Kai is a minimalistic wearable that can recognize your hand gestures to interact with the digital world intuitively.
@@ -41,7 +40,7 @@
       </div>
     </div>
   </div>
-  <div class="thirdPage">
+  <div class="thirdPage section">
     <div class="content">
       <div class="text">
         Kai is a minimalistic wearable that can recognize your hand gestures to interact with the digital world intuitively.
@@ -56,7 +55,7 @@
       </div>
     </div>
   </div>
-  <div class="fourthPage">
+  <div class="fourthPage section">
     <div class="content">
       <div class="text">
         Kai is a minimalistic wearable that can recognize your hand gestures to interact with the digital world intuitively.
@@ -71,5 +70,27 @@
       </div>
     </div>
   </div>
+  <div class="media section row">
+    <div class="news-papers col s8 push-s2">
+      <div>Hindu Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div>Deccan Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div>Malayala Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      <div>Chennai Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+    <br/><br/>
+    <div class="news-papers-nav col s10 push-s1">
+      <div>The Hindu</div>
+      <div>Deccan Chronicle</div>
+      <div>Malayala Manorama</div>
+      <div>Chennai Varthakal</div>
+    </div>
+  </div>
+</div>
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
+<script src="./bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
+<script src="bower_components/materialize/dist/js/materialize.js"></script>
+
+<script src="scripts/kai.js"></script>
 </body>
 </html>

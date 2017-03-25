@@ -1,0 +1,186 @@
+$blue:#1163e9;
+@font-face {
+  font-family: 'Selawik';
+  src:url('public/fonts/selawik/selawkl.ttf')
+}
+$segoe-ui:'sans-serif';
+
+html{
+  width: 100%;
+  height: 100%;
+    body{
+      font-family: $segoe-ui;
+      font-weight: 300;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      .firstPage{
+        position: fixed;
+        top:0;
+        width: 100%;
+        min-height: 100%;
+        background: $blue;
+        .meet-kai{
+            width: auto;
+            height: 123px;
+            font-family: $segoe-ui;
+            font-size: 174.5px;
+            font-weight: 700;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            margin: auto;
+            padding-top: 200px;
+            text-align: center;
+            .kai{
+              position: absolute;
+              left: 50%;
+              -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+              margin: auto;
+              top:50%;
+            }
+        }
+        .down-arrow{
+          position: absolute;
+          left: 50%;
+          -webkit-transform:translateX(-50%);
+          transform: translateX(-50%);
+          margin: auto;
+          bottom: 5%;
+        }
+      }
+      .secondPage{
+        background-color: #ffffff;
+        position: absolute;
+        top:100%;
+        min-height: 120%;
+        width: 100%;
+        .content{
+          .text{
+            font-size: 18px;
+            position: absolute;
+            top: 43%;
+            left: -50%;
+            width:320px;
+            margin-left: 100px;
+          }
+          .kai{
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            margin: auto;
+            top:40%;
+          }
+          .meet-kai{
+            position: fixed;
+            top: 40%;
+            right:-50%;
+            font-size: 95.5px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: right;
+            color: #000000;
+            .kai-text{
+              color:$blue;
+            }
+          }
+        }
+      }
+      .thirdPage{
+        .content{
+          background-color: #ffffff;
+          position: absolute;
+          top:200%;
+          min-height: 100%;
+          width: 100%;
+          .text{
+            font-size: 18px;
+            position: absolute;
+            left: -50%;
+            top: 45%;
+            width:322px;
+            margin-left: 100px;
+          }
+          .hand{
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            margin: auto;
+            top:-50px;
+            img{
+              width: 90%;
+              height: 100%;
+            }
+          }
+          .smart-connect{
+            position: absolute;
+            top: 40%;
+            right:-100%;
+            font-size: 95.5px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: right;
+            color: #000000;
+            .connect-text{
+              color:$blue;
+            }
+          }
+        }
+      }
+      .fourthPage{
+        .content{
+          background-color: #ffffff;
+          position: absolute;
+          top:300%;
+          min-height: 100%;
+          width: 100%;
+          .text{
+            font-size: 18px;
+            position: absolute;
+            top: 45%;
+            width:322px;
+            margin-left: 100px;
+          }
+          .hand{
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            margin: auto;
+            top:-25px;
+            img{
+              width: 90%;
+            }
+          }
+          .smart-connect{
+            position: absolute;
+            top: 40%;
+            right:100px;
+            font-size: 90px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: right;
+            color: #000000;
+            .connect-text{
+              color:$blue;
+            }
+          }
+        }
+      }
+    }
+}

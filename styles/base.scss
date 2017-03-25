@@ -1,178 +1,185 @@
-$segoe-ui:sans-serif;
 $blue:#1163e9;
+$segoe-ui:'sans-serif';
 html{
-  width: 100%;
-  height: 100%;
-    body{
-      font-family: $segoe-ui;
-      width: 100%;
-      height: 100%;
-      overflow-x: hidden;
-      .firstPage{
-        position: fixed;
-        top:0;
-        width: 100%;
-        min-height: 100%;
-        background: $blue;
-        .meet-kai{
-            width: auto;
-            height: 123px;
-            font-family: $segoe-ui;
-            font-size: 174.5px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            color: #ffffff;
-            margin: auto;
-            padding-top: 200px;
-            text-align: center;
-            .kai{
-              position: absolute;
-              left: 50%;
-              -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-              margin: auto;
-              top:50%;
-            }
-        }
-        .down-arrow{
-          position: absolute;
-          left: 50%;
-          -webkit-transform:translateX(-50%);
-          transform: translateX(-50%);
-          margin: auto;
-          bottom: 5%;
-        }
+  body{
+    overflow: hidden !important;
+    .firstPage{
+
+      .fp-tableCell{
+        vertical-align: inherit !important;
       }
-      .secondPage{
-        background-color: #ffffff;
-        position: absolute;
-        top:100%;
-        min-height: 120%;
+      .content{
+        background:$blue !important;
         width: 100%;
-        .content{
-          .text{
-            font-size: 18px;
-            position: absolute;
-            top: 45%;
-            left: -50%;
-            width:322px;
-            margin-left: 100px;
-          }
+        height: 100%;
+        position: fixed;
+        top:0px
+      }
+      .meet-kai{
+          width: auto;
+          height: 123px;
+          font-family: $segoe-ui;
+          font-size: 174.5px;
+          font-weight: 700;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #ffffff;
+          padding-top: 150px;
+          margin: auto;
+          text-align: center;
           .kai{
             position: absolute;
             left: 50%;
             -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
             margin: auto;
-            top:40%;
+            top:50%;
           }
-          .meet-kai{
-            position: fixed;
-            top: 40%;
-            right:-50%;
-            font-size: 95.5px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1;
-            letter-spacing: normal;
-            text-align: right;
-            color: #000000;
-            .kai-text{
-              color:$blue;
-            }
+      }
+      .down-arrow{
+        position: absolute;
+        left: 50%;
+        -webkit-transform:translateX(-50%);
+        transform: translateX(-50%);
+        margin: auto;
+        bottom: 5%;
+      }
+    }
+    .secondPage{
+      .fp-tableCell{
+        vertical-align: inherit !important;
+      }
+      .content{
+        .text{
+          font-size: 18px;
+          position: absolute;
+          top: 43%;
+          left: -50%;
+          width:320px;
+          margin-left: 100px;
+        }
+        .kai{
+          position: fixed;
+          opacity: 0;
+          transition: all 1s;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          margin: auto;
+          top:40%;
+        }
+        .meet-kai{
+          position: fixed;
+          top: 40%;
+          right:-100%;
+          font-size: 95.5px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          text-align: right;
+          color: #000000;
+          .kai-text{
+            color:$blue;
           }
         }
+    }
+  }
+  .thirdPage{
+    overflow: hidden;
+    .content{
+      background-color: #ffffff;
+      .text{
+        font-size: 18px;
+        position: absolute;
+        left: -50%;
+        top: 45%;
+        width:322px;
+        margin-left: 100px;
       }
-      .thirdPage{
-        .content{
-          background-color: #ffffff;
-          position: absolute;
-          top:220%;
-          min-height: 100%;
-          width: 100%;
-          .text{
-            font-size: 18px;
-            position: absolute;
-            top: 45%;
-            width:322px;
-            margin-left: 100px;
-          }
-          .hand{
-            position: absolute;
-            left: 50%;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            margin: auto;
-            top:-50px;
-            img{
-              width: 70%;
-            }
-          }
-          .smart-connect{
-            position: absolute;
-            top: 40%;
-            right:100px;
-            font-size: 95.5px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1;
-            letter-spacing: normal;
-            text-align: right;
-            color: #000000;
-            .connect-text{
-              color:$blue;
-            }
-          }
+      .hand{
+        position: fixed;
+        opacity: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin: auto;
+        top:-50px;
+        img{
+          width: 90%;
+          height: 100%;
         }
       }
-      .fourthPage{
-        .content{
-          background-color: #ffffff;
-          position: absolute;
-          top:300%;
-          min-height: 100%;
-          width: 100%;
-          .text{
-            font-size: 18px;
-            position: absolute;
-            top: 45%;
-            width:322px;
-            margin-left: 100px;
-          }
-          .hand{
-            position: absolute;
-            left: 50%;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            margin: auto;
-            top:-25px;
-            img{
-              width: 70%;
-            }
-          }
-          .smart-connect{
-            position: absolute;
-            top: 40%;
-            right:100px;
-            font-size: 95.5px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1;
-            letter-spacing: normal;
-            text-align: right;
-            color: #000000;
-            .connect-text{
-              color:$blue;
-            }
-          }
+      .smart-connect{
+        position: absolute;
+        top: 40%;
+        right:-100%;
+        font-size: 95.5px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: right;
+        color: #000000;
+        .connect-text{
+          color:$blue;
         }
       }
     }
+  }
+  .fourthPage{
+    overflow: hidden;
+    .content{
+      background-color: #ffffff;
+      .text{
+        font-size: 18px;
+        position: absolute;
+        top: 45%;
+        left: -50%;
+        width:322px;
+        margin-left: 100px;
+      }
+      .hand{
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin: auto;
+        top:-25px;
+        img{
+          width: 90%;
+        }
+      }
+      .smart-connect{
+        position: absolute;
+        top: 40%;
+        right:-100%;
+        font-size: 90px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: right;
+        color: #000000;
+        .connect-text{
+          color:$blue;
+        }
+      }
+    }
+  }
+  .media{
+    .slick-prev:before, .slick-next:before {
+      color:red !important;
+    }
+    .news-paper{
+
+    }
+  }
+}
 }
