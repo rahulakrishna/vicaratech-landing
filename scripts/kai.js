@@ -20,7 +20,7 @@ $(document).ready(function () {
 		//Navigation
 		menu: '#menu',
 		lockAnchors: false,
-		anchors:['landing', 'meet-kai','smart-connect','adaptive-body','media'],
+		anchors:['landing', 'meet-kai','smart-connect','adaptive-body','media','team','contact'],
 		navigation: true,
 		navigationPosition: 'left',
 		navigationTooltips: ['firstSlide', 'secondSlide'],

@@ -185,7 +185,7 @@ html{
       vertical-align: inherit !important;
     }
     .slick-prev:before, .slick-next:before {
-      color:red !important;
+      color:$blue !important;
     }
     .news-paper-article{
       text-align:center;
@@ -209,8 +209,31 @@ html{
           width: 250px;
           transition: all 0.5s;
           opacity: 1;
-          
+
         }
+      }
+    }
+  }
+  .contact{
+    background-color: $blue;
+    .e-mail-container{
+      padding: 0px;
+      .e-mail{
+        border:1px solid white;
+        margin: 0 !important;
+        left: 0px;
+        right: 0px;
+        padding: 0.25rem;
+        height: 3rem;
+      }
+    }
+    .subscribe-container{
+      padding: 0px;
+      .subscribe{
+        width: 100%;
+        margin: 0px;
+        padding: 0.25rem;
+        height: 3rem;
       }
     }
   }

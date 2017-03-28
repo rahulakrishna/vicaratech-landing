@@ -4,7 +4,7 @@ html body {
   html body .firstPage .fp-tableCell {
     vertical-align: inherit !important; }
   html body .firstPage .content {
-    background: #689687 !important;
+    background: #553e4e !important;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -69,7 +69,7 @@ html body {
     text-align: right;
     color: #000000; }
     html body .secondPage .content .meet-kai .kai-text {
-      color: #689687; }
+      color: #553e4e; }
   html body .thirdPage {
     overflow: hidden; }
     html body .thirdPage .content {
@@ -105,7 +105,7 @@ html body {
         text-align: right;
         color: #000000; }
         html body .thirdPage .content .smart-connect .connect-text {
-          color: #689687; }
+          color: #553e4e; }
   html body .fourthPage {
     overflow: hidden; }
     html body .fourthPage .content {
@@ -139,11 +139,11 @@ html body {
         text-align: right;
         color: #000000; }
         html body .fourthPage .content .smart-connect .connect-text {
-          color: #689687; }
+          color: #553e4e; }
   html body .media .fp-tableCell {
     vertical-align: inherit !important; }
   html body .media .slick-prev:before, html body .media .slick-next:before {
-    color: red !important; }
+    color: #553e4e !important; }
   html body .media .news-paper-article {
     text-align: center;
     margin-top: 200px; }
@@ -157,5 +157,23 @@ html body {
     width: 250px;
     transition: all 0.5s;
     opacity: 1; }
+  html body .contact {
+    background-color: #553e4e; }
+    html body .contact .e-mail-container {
+      padding: 0px; }
+      html body .contact .e-mail-container .e-mail {
+        border: 1px solid white;
+        margin: 0 !important;
+        left: 0px;
+        right: 0px;
+        padding: 0.25rem;
+        height: 3rem; }
+    html body .contact .subscribe-container {
+      padding: 0px; }
+      html body .contact .subscribe-container .subscribe {
+        width: 100%;
+        margin: 0px;
+        padding: 0.25rem;
+        height: 3rem; }
 
 /*# sourceMappingURL=main.css.map */
