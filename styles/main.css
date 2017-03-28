@@ -1,9 +1,10 @@
 html body {
-  overflow: hidden !important; }
+  overflow: hidden !important;
+  font-family: "SelawikRegular", "Helvetica"; }
   html body .firstPage .fp-tableCell {
     vertical-align: inherit !important; }
   html body .firstPage .content {
-    background: #1163e9 !important;
+    background: #689687 !important;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -11,7 +12,7 @@ html body {
   html body .firstPage .meet-kai {
     width: auto;
     height: 123px;
-    font-family: "sans-serif";
+    font-family: "SelawikRegular", "Helvetica";
     font-size: 174.5px;
     font-weight: 700;
     font-style: normal;
@@ -59,7 +60,7 @@ html body {
     position: fixed;
     top: 40%;
     right: -100%;
-    font-size: 95.5px;
+    font-size: 84px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
@@ -68,7 +69,7 @@ html body {
     text-align: right;
     color: #000000; }
     html body .secondPage .content .meet-kai .kai-text {
-      color: #1163e9; }
+      color: #689687; }
   html body .thirdPage {
     overflow: hidden; }
     html body .thirdPage .content {
@@ -95,7 +96,7 @@ html body {
         position: absolute;
         top: 40%;
         right: -100%;
-        font-size: 95.5px;
+        font-size: 84px;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -104,7 +105,7 @@ html body {
         text-align: right;
         color: #000000; }
         html body .thirdPage .content .smart-connect .connect-text {
-          color: #1163e9; }
+          color: #689687; }
   html body .fourthPage {
     overflow: hidden; }
     html body .fourthPage .content {
@@ -129,7 +130,7 @@ html body {
         position: absolute;
         top: 40%;
         right: -100%;
-        font-size: 90px;
+        font-size: 84px;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -138,8 +139,23 @@ html body {
         text-align: right;
         color: #000000; }
         html body .fourthPage .content .smart-connect .connect-text {
-          color: #1163e9; }
+          color: #689687; }
+  html body .media .fp-tableCell {
+    vertical-align: inherit !important; }
   html body .media .slick-prev:before, html body .media .slick-next:before {
     color: red !important; }
+  html body .media .news-paper-article {
+    text-align: center;
+    margin-top: 200px; }
+  html body .media .news-paper-name img {
+    width: 200px;
+    margin: auto;
+    transition: all 0.5s; }
+  html body .media .news-papers-nav .slick-slide img {
+    opacity: 0.5; }
+  html body .media .news-papers-nav .slick-current img {
+    width: 250px;
+    transition: all 0.5s;
+    opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

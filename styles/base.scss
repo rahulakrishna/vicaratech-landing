@@ -1,10 +1,17 @@
-$blue:#1163e9;
-$segoe-ui:'sans-serif';
+$re:random(256)-1;
+$gr:random(256)-1;
+$bl:random(256)-1;
+
+$blue:rgb($re,$gr,$bl);
+
+$basic-blue:#1163e9;
+
+$segoe-ui:'SelawikRegular','Helvetica';
 html{
   body{
     overflow: hidden !important;
+    font-family: $segoe-ui;
     .firstPage{
-
       .fp-tableCell{
         vertical-align: inherit !important;
       }
@@ -75,7 +82,7 @@ html{
           position: fixed;
           top: 40%;
           right:-100%;
-          font-size: 95.5px;
+          font-size: 84px;
           font-weight: bold;
           font-style: normal;
           font-stretch: normal;
@@ -118,7 +125,7 @@ html{
         position: absolute;
         top: 40%;
         right:-100%;
-        font-size: 95.5px;
+        font-size: 84px;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -159,7 +166,7 @@ html{
         position: absolute;
         top: 40%;
         right:-100%;
-        font-size: 90px;
+        font-size: 84px;
         font-weight: bold;
         font-style: normal;
         font-stretch: normal;
@@ -174,11 +181,37 @@ html{
     }
   }
   .media{
+    .fp-tableCell{
+      vertical-align: inherit !important;
+    }
     .slick-prev:before, .slick-next:before {
       color:red !important;
     }
-    .news-paper{
-
+    .news-paper-article{
+      text-align:center;
+      margin-top: 200px;
+    }
+    .news-paper-name{
+      img{
+        width: 200px;
+        margin: auto;
+        transition: all 0.5s;
+      }
+    }
+    .news-papers-nav{
+      .slick-slide{
+        img{
+          opacity: 0.5;
+        }
+      }
+      .slick-current{
+        img{
+          width: 250px;
+          transition: all 0.5s;
+          opacity: 1;
+          
+        }
+      }
     }
   }
 }

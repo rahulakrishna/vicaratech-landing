@@ -11,8 +11,8 @@ $(document).ready(function () {
     slidesToShow:3,
     slidesToScroll:1,
     asNavFor:'.news-papers',
-    dots:true,
     centerMode:true,
+    centerPadding:'60px',
     focusOnSelect:true
   })
 
@@ -20,7 +20,7 @@ $(document).ready(function () {
 		//Navigation
 		menu: '#menu',
 		lockAnchors: false,
-		anchors:['firstPage', 'secondPage'],
+		anchors:['landing', 'meet-kai','smart-connect','adaptive-body','media'],
 		navigation: true,
 		navigationPosition: 'left',
 		navigationTooltips: ['firstSlide', 'secondSlide'],
