@@ -16,6 +16,19 @@ $(document).ready(function () {
     focusOnSelect:true
   })
 
+  $('.people-row').slick({
+    slidesToShow:1,
+    slidesToScroll:1,
+    arrows:false
+  })
+  $('.people-nav').slick({
+    slidesToShow:5,
+    slidesToScroll:1,
+    arrows:true,
+    centerMode:true,
+    focusOnSelect:true
+  })
+
 	$('#fullpage').fullpage({
 		//Navigation
 		menu: '#menu',
@@ -190,9 +203,10 @@ $(document).ready(function () {
       })
     }
 
+    wht=$(window).height();
     $(window).scroll(function () {
-        console.log($(window).scrollTop());
-        if($(window).scrollTop()>500){
+        console.log($(window).scrollTop(),wht);
+        if($(window).scrollTop()>wht){
           firstAnim();
           hideFirstPage();
         }
@@ -200,14 +214,13 @@ $(document).ready(function () {
           firstAnimReverse();
           showFirstPage();
         }
-
-        if($(window).scrollTop()>1100){
+        if($(window).scrollTop()>wht*2){
           secondAnim();
         }
         else{
           secondAnimRev();
         }
-        if($(window).scrollTop()>1800){
+        if($(window).scrollTop()>wht*3){
           thirdAnim();
         }
         else{

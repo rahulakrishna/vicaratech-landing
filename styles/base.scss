@@ -214,6 +214,31 @@ html{
       }
     }
   }
+  .people{
+      position: relative;
+      .person-pic{
+        height: 250px;
+        img{
+          height: 300px;
+          position: absolute;
+        }
+      }
+      .slick-current{
+        .overlay{
+          position: relative;;
+          top:0px;
+          left: 0px;
+          width: 100%;
+          height: 300px;
+          opacity: 0.3;
+          background-color: $blue;
+        }
+        img{
+          opacity: 0.5;
+        }
+
+      }
+  }
   .contact{
     background-color: $blue;
     .e-mail-container{
