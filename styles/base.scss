@@ -38,12 +38,12 @@ html{
           margin: auto;
           text-align: center;
           .kai{
-            position: absolute;
+            position: fixed;
             left: 50%;
             -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
             margin: auto;
-            top:50%;
+            top:40%;
           }
       }
       .down-arrow{
@@ -307,11 +307,14 @@ html{
         margin: 0px;
         padding: 0.25rem;
         height: 3rem;
+        margin-left: -22px;
+
       }
     }
     .custom-footer{
       position: absolute;
       bottom: 0px;
+      left: 0px;
       width: 100%;
       text-align: center;
       background-color: rgba(0,0,0,0.2);
@@ -320,6 +323,9 @@ html{
       color: #fff;
       .social-icons{
         float: right;
+        i{
+          padding: 10px;
+        }
       }
     }
   }

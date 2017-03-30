@@ -26,7 +26,8 @@ $(document).ready(function () {
     slidesToScroll:1,
     arrows:true,
     centerMode:true,
-    focusOnSelect:true
+    focusOnSelect:true,
+    asNavFor:'.people-row'
   })
 
 	$('#fullpage').fullpage({

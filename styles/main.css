@@ -4,7 +4,7 @@ html body {
   html body .firstPage .fp-tableCell {
     vertical-align: inherit !important; }
   html body .firstPage .content {
-    background: #a06335 !important;
+    background: #dcc3ba !important;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -25,12 +25,12 @@ html body {
     margin: auto;
     text-align: center; }
     html body .firstPage .meet-kai .kai {
-      position: absolute;
+      position: fixed;
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
       margin: auto;
-      top: 50%; }
+      top: 40%; }
   html body .firstPage .down-arrow {
     position: absolute;
     left: 50%;
@@ -69,7 +69,7 @@ html body {
     text-align: right;
     color: #000000; }
     html body .secondPage .content .meet-kai .kai-text {
-      color: #a06335; }
+      color: #dcc3ba; }
   html body .thirdPage {
     overflow: hidden; }
     html body .thirdPage .content {
@@ -105,7 +105,7 @@ html body {
         text-align: right;
         color: #000000; }
         html body .thirdPage .content .smart-connect .connect-text {
-          color: #a06335; }
+          color: #dcc3ba; }
   html body .fourthPage {
     overflow: hidden; }
     html body .fourthPage .content {
@@ -139,17 +139,17 @@ html body {
         text-align: right;
         color: #000000; }
         html body .fourthPage .content .smart-connect .connect-text {
-          color: #a06335; }
+          color: #dcc3ba; }
   html body .media .title {
     font-size: 60px;
     font-weight: 700;
     padding-left: 100px; }
     html body .media .title .vertical-bar {
-      color: #a06335; }
+      color: #dcc3ba; }
   html body .media .fp-tableCell {
     vertical-align: inherit !important; }
   html body .media .slick-prev:before, html body .media .slick-next:before {
-    color: #a06335 !important; }
+    color: #dcc3ba !important; }
   html body .media .news-paper-article {
     text-align: center;
     margin-top: 200px; }
@@ -172,7 +172,7 @@ html body {
       font-weight: 700;
       padding-left: 100px; }
       html body .people .title .vertical-bar {
-        color: #a06335; }
+        color: #dcc3ba; }
     html body .people .person .member-name {
       font-size: 30px;
       font-weight: 700; }
@@ -198,11 +198,11 @@ html body {
       width: 100%;
       height: 300px;
       opacity: 0.3;
-      background-color: #a06335; }
+      background-color: #dcc3ba; }
     html body .people .slick-current img {
       opacity: 0.5; }
   html body .contact {
-    background-color: #a06335; }
+    background-color: #dcc3ba; }
     html body .contact .fp-tableCell {
       vertical-align: inherit !important; }
     html body .contact .container {
@@ -226,10 +226,12 @@ html body {
         width: 100%;
         margin: 0px;
         padding: 0.25rem;
-        height: 3rem; }
+        height: 3rem;
+        margin-left: -22px; }
     html body .contact .custom-footer {
       position: absolute;
       bottom: 0px;
+      left: 0px;
       width: 100%;
       text-align: center;
       background-color: rgba(0, 0, 0, 0.2);
@@ -238,5 +240,7 @@ html body {
       color: #fff; }
       html body .contact .custom-footer .social-icons {
         float: right; }
+        html body .contact .custom-footer .social-icons i {
+          padding: 10px; }
 
 /*# sourceMappingURL=main.css.map */
