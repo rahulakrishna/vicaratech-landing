@@ -4,7 +4,7 @@ html body {
   html body .firstPage .fp-tableCell {
     vertical-align: inherit !important; }
   html body .firstPage .content {
-    background: #ea8e95 !important;
+    background: #1163e9 !important;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -21,7 +21,7 @@ html body {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    padding-top: 150px;
+    padding-top: 120px;
     margin: auto;
     text-align: center; }
     html body .firstPage .meet-kai .kai {
@@ -69,7 +69,7 @@ html body {
     text-align: right;
     color: #000000; }
     html body .secondPage .content .meet-kai .kai-text {
-      color: #ea8e95; }
+      color: #1163e9; }
   html body .thirdPage {
     overflow: hidden; }
     html body .thirdPage .content {
@@ -105,7 +105,7 @@ html body {
         text-align: right;
         color: #000000; }
         html body .thirdPage .content .smart-connect .connect-text {
-          color: #ea8e95; }
+          color: #1163e9; }
   html body .fourthPage {
     overflow: hidden; }
     html body .fourthPage .content {
@@ -139,17 +139,17 @@ html body {
         text-align: right;
         color: #000000; }
         html body .fourthPage .content .smart-connect .connect-text {
-          color: #ea8e95; }
+          color: #1163e9; }
   html body .media .title {
     font-size: 60px;
     font-weight: 700;
     padding-left: 100px; }
     html body .media .title .vertical-bar {
-      color: #ea8e95; }
+      color: #1163e9; }
   html body .media .fp-tableCell {
     vertical-align: inherit !important; }
   html body .media .slick-prev:before, html body .media .slick-next:before {
-    color: #ea8e95 !important; }
+    color: #1163e9 !important; }
   html body .media .news-paper-article {
     text-align: center;
     margin-top: 200px; }
@@ -172,7 +172,7 @@ html body {
       font-weight: 700;
       padding-left: 100px; }
       html body .people .title .vertical-bar {
-        color: #ea8e95; }
+        color: #1163e9; }
     html body .people .person .member-name {
       font-size: 30px;
       font-weight: 700; }
@@ -198,11 +198,11 @@ html body {
       width: 100%;
       height: 300px;
       opacity: 0.3;
-      background-color: #ea8e95; }
+      background-color: #1163e9; }
     html body .people .slick-current img {
       opacity: 0.5; }
   html body .contact {
-    background-color: #ea8e95; }
+    background-color: #1163e9; }
     html body .contact .fp-tableCell {
       vertical-align: inherit !important; }
     html body .contact .container {
