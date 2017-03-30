@@ -1,0 +1,65 @@
+$re:random(256)-1;
+$gr:random(256)-1;
+$bl:random(256)-1;
+$blue:rgb($re,$gr,$bl);
+$basic-blue:#1163e9;
+
+
+.firstPage{
+  .content{
+    background-color: $basic-blue;
+    height: 100%;
+    margin: 0px;
+    .meet-kai{
+      font-size: 72px;
+    }
+    .kai{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+    .down-arrow{
+      position: absolute;
+      left: 50%;
+      -webkit-transform:translateX(-50%);
+      transform: translateX(-50%);
+      margin: auto;
+      bottom: 5%;
+    }
+  }
+}
+
+.secondPage{
+  text-align: center;
+  .text{
+    text-align: center;
+  }
+  .kai{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  .meet-kai{
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+
+.thirdPage{
+  .text{
+    text-align: center;
+  }
+  .kai-holder{
+    width: 100%;
+    text-align: center;
+    img{
+      width: 50%;
+    }
+  }
+  .smart-connect{
+    font-size: 36px;
+    font-weight: 700;
+  }
+}

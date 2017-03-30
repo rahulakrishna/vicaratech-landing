@@ -1,0 +1,42 @@
+.firstPage .content {
+  background-color: #1163e9;
+  height: 100%;
+  margin: 0px; }
+  .firstPage .content .meet-kai {
+    font-size: 72px; }
+  .firstPage .content .kai {
+    width: 100%; }
+    .firstPage .content .kai img {
+      width: 100%; }
+  .firstPage .content .down-arrow {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: auto;
+    bottom: 5%; }
+
+.secondPage {
+  text-align: center; }
+  .secondPage .text {
+    text-align: center; }
+  .secondPage .kai {
+    width: 100%; }
+    .secondPage .kai img {
+      width: 100%; }
+  .secondPage .meet-kai {
+    font-size: 36px;
+    font-weight: 700; }
+
+.thirdPage .text {
+  text-align: center; }
+.thirdPage .kai-holder {
+  width: 100%;
+  text-align: center; }
+  .thirdPage .kai-holder img {
+    width: 50%; }
+.thirdPage .smart-connect {
+  font-size: 36px;
+  font-weight: 700; }
+
+/*# sourceMappingURL=mobile.css.map */

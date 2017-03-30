@@ -206,7 +206,7 @@ $(document).ready(function () {
     wht=$(window).height();
     $(window).scroll(function () {
         console.log($(window).scrollTop(),wht);
-        if($(window).scrollTop()>wht){
+        if($(window).scrollTop()>(wht-200)){
           firstAnim();
           hideFirstPage();
         }
@@ -214,13 +214,13 @@ $(document).ready(function () {
           firstAnimReverse();
           showFirstPage();
         }
-        if($(window).scrollTop()>wht*2){
+        if($(window).scrollTop()>(wht*2-200)){
           secondAnim();
         }
         else{
           secondAnimRev();
         }
-        if($(window).scrollTop()>wht*3){
+        if($(window).scrollTop()>(wht*3-200)){
           thirdAnim();
         }
         else{

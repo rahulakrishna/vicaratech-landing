@@ -181,6 +181,14 @@ html{
     }
   }
   .media{
+    .title{
+      .vertical-bar{
+        color: $blue;
+      }
+      font-size: 60px;
+      font-weight: 700;
+      padding-left: 100px;
+    }
     .fp-tableCell{
       vertical-align: inherit !important;
     }
@@ -216,6 +224,36 @@ html{
   }
   .people{
       position: relative;
+      .fp-tableCell{
+        vertical-align: inherit !important;
+      }
+      .title{
+        .vertical-bar{
+          color: $blue;
+        }
+        font-size: 60px;
+        font-weight: 700;
+        padding-left: 100px;
+      }
+      .person{
+        .member-name{
+          font-size: 30px;
+          font-weight: 700;
+        }
+        .member-desc{
+          font-size: 24px;
+          color: #757575;
+          font-weight: 500;
+        }
+        .member-extended-desc{
+          padding-left: 200px;
+          padding-right: 200px;
+        }
+        i{
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
       .person-pic{
         height: 250px;
         img{
@@ -241,6 +279,15 @@ html{
   }
   .contact{
     background-color: $blue;
+    .fp-tableCell{
+      vertical-align: inherit !important;
+    }
+    .container{
+      height: 100%;
+      padding-top:100px;
+      padding-bottom: 0px;
+      margin: 0;
+    }
     .e-mail-container{
       padding: 0px;
       .e-mail{
@@ -253,12 +300,26 @@ html{
       }
     }
     .subscribe-container{
-      padding: 0px;
+      padding-top: 0px;
       .subscribe{
+        padding-top:100px;
         width: 100%;
         margin: 0px;
         padding: 0.25rem;
         height: 3rem;
+      }
+    }
+    .custom-footer{
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0,0,0,0.2);
+      margin: 0;
+      padding: 50px;
+      color: #fff;
+      .social-icons{
+        float: right;
       }
     }
   }
