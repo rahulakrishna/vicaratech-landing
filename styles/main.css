@@ -40,11 +40,10 @@ html body {
     bottom: 5%; }
   html body .secondPage .content .text {
     font-size: 18px;
-    position: absolute;
-    top: 43%;
-    left: -50%;
+    vertical-align: middle;
     width: 320px;
-    margin-left: 100px; }
+    margin-left: -500px;
+    transition: all 0.5s; }
   html body .secondPage .content .kai {
     position: fixed;
     opacity: 0;
@@ -55,9 +54,9 @@ html body {
     margin: auto;
     top: 40%; }
   html body .secondPage .content .meet-kai {
-    position: fixed;
-    top: 40%;
-    right: -100%;
+    vertical-align: middle;
+    width: 320px;
+    margin-left: 1000px;
     font-size: 84px;
     font-weight: bold;
     font-style: normal;
@@ -225,7 +224,8 @@ html body {
         margin: 0px;
         padding: 0.25rem;
         height: 3rem;
-        margin-left: -22px; }
+        margin-left: -22px;
+        color: #1163e9; }
     html body .contact .custom-footer {
       position: absolute;
       bottom: 0px;

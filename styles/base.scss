@@ -56,15 +56,13 @@ html{
       }
     }
     .secondPage{
-      
       .content{
         .text{
           font-size: 18px;
-          position: absolute;
-          top: 43%;
-          left: -50%;
+          vertical-align: middle;
           width:320px;
-          margin-left: 100px;
+          margin-left: -500px;
+          transition: all 0.5s;
         }
         .kai{
           position: fixed;
@@ -77,9 +75,9 @@ html{
           top:40%;
         }
         .meet-kai{
-          position: fixed;
-          top: 40%;
-          right:-100%;
+          vertical-align: middle;
+          width: 320px;
+          margin-left: 1000px;
           font-size: 84px;
           font-weight: bold;
           font-style: normal;
@@ -306,7 +304,7 @@ html{
         padding: 0.25rem;
         height: 3rem;
         margin-left: -22px;
-
+        color: $blue;
       }
     }
     .custom-footer{

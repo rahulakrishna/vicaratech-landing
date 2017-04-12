@@ -1,11 +1,15 @@
 $(document).ready(function () {
-    console.log('Kai working and all.')
+  console.log('Kai working and all.')
+
+
   $('.news-papers').slick({
+    centerMode:true,
     slidesToShow:1,
     slidesToScroll:1,
     arrows:false,
     fade:true,
-    asNavFor:'.news-papers-nav'
+    asNavFor:'.news-papers-nav',
+    autoplay:true
   });
   $('.news-papers-nav').slick({
     slidesToShow:3,
@@ -22,12 +26,16 @@ $(document).ready(function () {
     arrows:false
   })
   $('.people-nav').slick({
-    slidesToShow:5,
+    slidesToShow:6,
     slidesToScroll:1,
     arrows:true,
-    centerMode:true,
     focusOnSelect:true,
     asNavFor:'.people-row'
+  })
+
+  $('#vignesh').click(function(){
+    $('.people-row').slick("slickGoTo",4)
+    $('.people-nav').slick("slickGoTo",4)
   })
 
 	$('#fullpage').fullpage({
@@ -107,12 +115,12 @@ $(document).ready(function () {
 
     firstAnim=function(){
       $('.secondPage .text').css({
-        left:'1%',
+        marginLeft:'100px',
         transition:'all 1s'
       })
       $('.secondPage .meet-kai').css({
         position:'absolute',
-        right:'50px',
+        marginRight:'100px',
         transition:'all 1s'
       })
       $('.secondPage .content .kai').css({
@@ -122,12 +130,12 @@ $(document).ready(function () {
     }
     firstAnimReverse=function(){
       $('.secondPage .text').css({
-        left:'-145%',
+        marginLeft:'-500px',
         transition:'all 1s'
       })
       $('.secondPage .meet-kai').css({
         position:'absolute',
-        right:'-50%',
+        marginRight:'-300px',
         transition:'all 1s'
       })
       $('.secondPage .content .kai').css({
