@@ -33,11 +33,6 @@ $(document).ready(function () {
     asNavFor:'.people-row'
   })
 
-  $('#vignesh').click(function(){
-    $('.people-row').slick("slickGoTo",4)
-    $('.people-nav').slick("slickGoTo",4)
-  })
-
 	$('#fullpage').fullpage({
 		//Navigation
 		menu: '#menu',
@@ -119,9 +114,8 @@ $(document).ready(function () {
         transition:'all 1s'
       })
       $('.secondPage .meet-kai').css({
-        position:'absolute',
-        marginRight:'100px',
-        transition:'all 1s'
+        transition:'all 1s',
+        right:'100px'
       })
       $('.secondPage .content .kai').css({
         opacity:1
@@ -134,8 +128,7 @@ $(document).ready(function () {
         transition:'all 1s'
       })
       $('.secondPage .meet-kai').css({
-        position:'absolute',
-        marginRight:'-300px',
+        right:'-500px',
         transition:'all 1s'
       })
       $('.secondPage .content .kai').css({
@@ -146,12 +139,11 @@ $(document).ready(function () {
     secondAnim=function(){
       firstAnimReverse()
       $('.thirdPage .text').css({
-        left:'1%',
+        marginLeft:'100px',
         transition:'all 1s'
       })
       $('.thirdPage .smart-connect').css({
-        position:'absolute',
-        right:'50px',
+        right:'100px',
         transition:'all 1s'
       })
       $('.thirdPage .hand').css({
@@ -161,12 +153,11 @@ $(document).ready(function () {
     }
     secondAnimRev=function(back){
       $('.thirdPage .text').css({
-        left:'-50%',
+        marginLeft:'-500px',
         transition:'all 1s'
       })
       $('.thirdPage .smart-connect').css({
-        position:'absolute',
-        right:'-100%',
+        right:'-500px',
         transition:'all 1s'
       })
       $('.thirdPage .hand').css({
@@ -178,22 +169,20 @@ $(document).ready(function () {
     thirdAnim=function(){
       secondAnimRev();
       $('.fourthPage .text').css({
-        left:'1%',
+        marginLeft:'100px',
         transition:'all 1s'
       })
       $('.fourthPage .smart-connect').css({
-        position:'absolute',
-        right:'1%',
+        right:'100px',
         transition:'all 1s'
       })
     }
     thirdAnimRev=function(){
       $('.fourthPage .text').css({
-        left:'-50%',
+        marginLeft:'-500px',
         transition:'all 1s'
       })
       $('.fourthPage .smart-connect').css({
-        position:'absolute',
         right:'-100%',
         transition:'all 1s'
       })

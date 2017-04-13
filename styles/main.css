@@ -43,7 +43,8 @@ html body {
     vertical-align: middle;
     width: 320px;
     margin-left: -500px;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    height: 200px; }
   html body .secondPage .content .kai {
     position: fixed;
     opacity: 0;
@@ -53,10 +54,11 @@ html body {
     transform: translateX(-50%);
     margin: auto;
     top: 40%; }
+    html body .secondPage .content .kai img {
+      margin-left: 100px; }
   html body .secondPage .content .meet-kai {
+    height: 200px;
     vertical-align: middle;
-    width: 320px;
-    margin-left: 1000px;
     font-size: 84px;
     font-weight: bold;
     font-style: normal;
@@ -64,7 +66,9 @@ html body {
     line-height: 1;
     letter-spacing: normal;
     text-align: right;
-    color: #000000; }
+    color: #000000;
+    position: absolute;
+    right: -500px; }
     html body .secondPage .content .meet-kai .kai-text {
       color: #1163e9; }
   html body .thirdPage {
@@ -72,12 +76,12 @@ html body {
     html body .thirdPage .content {
       background-color: #ffffff; }
       html body .thirdPage .content .text {
+        height: 200px;
         font-size: 18px;
-        position: absolute;
-        left: -50%;
-        top: 45%;
-        width: 322px;
-        margin-left: 100px; }
+        vertical-align: middle;
+        margin-left: -500px;
+        width: 320px;
+        transition: all 1s; }
       html body .thirdPage .content .hand {
         position: fixed;
         opacity: 0;
@@ -90,8 +94,9 @@ html body {
           width: 90%;
           height: 100%; }
       html body .thirdPage .content .smart-connect {
+        height: 200px;
         position: absolute;
-        top: 40%;
+        vertical-align: middle;
         right: -100%;
         font-size: 84px;
         font-weight: bold;
@@ -109,11 +114,9 @@ html body {
       background-color: #ffffff; }
       html body .fourthPage .content .text {
         font-size: 18px;
-        position: absolute;
-        top: 45%;
-        left: -50%;
+        vertical-align: middle;
         width: 322px;
-        margin-left: 100px; }
+        margin-left: -500px; }
       html body .fourthPage .content .hand {
         position: absolute;
         left: 50%;
@@ -125,7 +128,8 @@ html body {
           width: 90%; }
       html body .fourthPage .content .smart-connect {
         position: absolute;
-        top: 40%;
+        vertical-align: middle;
+        height: 200px;
         right: -100%;
         font-size: 84px;
         font-weight: bold;

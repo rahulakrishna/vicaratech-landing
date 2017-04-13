@@ -63,6 +63,7 @@ html{
           width:320px;
           margin-left: -500px;
           transition: all 0.5s;
+          height: 200px;
         }
         .kai{
           position: fixed;
@@ -73,11 +74,13 @@ html{
           transform: translateX(-50%);
           margin: auto;
           top:40%;
+          img{
+            margin-left: 100px;
+          }
         }
         .meet-kai{
+          height: 200px;
           vertical-align: middle;
-          width: 320px;
-          margin-left: 1000px;
           font-size: 84px;
           font-weight: bold;
           font-style: normal;
@@ -89,6 +92,8 @@ html{
           .kai-text{
             color:$blue;
           }
+          position: absolute;
+          right:-500px;
         }
     }
   }
@@ -97,12 +102,12 @@ html{
     .content{
       background-color: #ffffff;
       .text{
+        height: 200px;
         font-size: 18px;
-        position: absolute;
-        left: -50%;
-        top: 45%;
-        width:322px;
-        margin-left: 100px;
+        vertical-align: middle;
+        margin-left: -500px;
+        width:320px;
+        transition: all 1s;
       }
       .hand{
         position: fixed;
@@ -118,8 +123,9 @@ html{
         }
       }
       .smart-connect{
+        height: 200px;
         position: absolute;
-        top: 40%;
+        vertical-align: middle;
         right:-100%;
         font-size: 84px;
         font-weight: bold;
@@ -141,11 +147,9 @@ html{
       background-color: #ffffff;
       .text{
         font-size: 18px;
-        position: absolute;
-        top: 45%;
-        left: -50%;
+        vertical-align: middle;
         width:322px;
-        margin-left: 100px;
+        margin-left: -500px;
       }
       .hand{
         position: absolute;
@@ -160,7 +164,8 @@ html{
       }
       .smart-connect{
         position: absolute;
-        top: 40%;
+        vertical-align: middle;
+        height: 200px;
         right:-100%;
         font-size: 84px;
         font-weight: bold;
