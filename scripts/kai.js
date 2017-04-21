@@ -1,9 +1,20 @@
 $(document).ready(function () {
   console.log('Kai working and all.')
+  console.log(window.location.hash);
 
+  if(window.location.hash=='#landing'){
+    console.log('Got inside till here');
+    $('.fp-slidesNav ul li a.active span').css({
+      backgroundColor:'#fff'
+    })
+    $('#fp-nav ul li a span').css({
+      backgroundColor:'#fff'
+    })
+  }
 
   $('.news-papers').slick({
     centerMode:true,
+    centerPadding:'300px',
     slidesToShow:1,
     slidesToScroll:1,
     arrows:false,
@@ -40,7 +51,7 @@ $(document).ready(function () {
 		anchors:['landing', 'meet-kai','smart-connect','adaptive-body','media','team','contact'],
 		navigation: true,
 		navigationPosition: 'left',
-		navigationTooltips: ['firstSlide', 'secondSlide'],
+		navigationTooltips: ['', 'Meet Kai'],
 		showActiveTooltip: false,
 		slidesNavigation: false,
 		slidesNavPosition: 'bottom',
@@ -85,8 +96,8 @@ $(document).ready(function () {
 		paddingTop: '3em',
 		paddingBottom: '10px',
 		fixedElements: '#header, .footer',
-		responsiveWidth: 0,
-		responsiveHeight: 0,
+		responsiveWidth: 800,
+		responsiveHeight: 600,
 		responsiveSlides: false,
 		parallax: false,
 		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},

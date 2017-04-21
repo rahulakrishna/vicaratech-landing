@@ -44,7 +44,8 @@ html body {
     width: 320px;
     margin-left: -500px;
     transition: all 0.5s;
-    height: 200px; }
+    height: 200px;
+    padding-top: 30px; }
   html body .secondPage .content .kai {
     position: fixed;
     opacity: 0;
@@ -81,7 +82,8 @@ html body {
         vertical-align: middle;
         margin-left: -500px;
         width: 320px;
-        transition: all 1s; }
+        transition: all 1s;
+        padding-top: 30px; }
       html body .thirdPage .content .hand {
         position: fixed;
         opacity: 0;
@@ -89,11 +91,13 @@ html body {
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         margin: auto;
-        top: -50px; }
+        top: -50px;
+        z-index: 2; }
         html body .thirdPage .content .hand img {
           width: 90%;
           height: 100%; }
       html body .thirdPage .content .smart-connect {
+        z-index: 1;
         height: 200px;
         position: absolute;
         vertical-align: middle;
@@ -113,10 +117,12 @@ html body {
     html body .fourthPage .content {
       background-color: #ffffff; }
       html body .fourthPage .content .text {
+        height: 200px;
         font-size: 18px;
         vertical-align: middle;
         width: 322px;
-        margin-left: -500px; }
+        margin-left: -500px;
+        padding-top: 30px; }
       html body .fourthPage .content .hand {
         position: absolute;
         left: 50%;
@@ -127,6 +133,7 @@ html body {
         html body .fourthPage .content .hand img {
           width: 90%; }
       html body .fourthPage .content .smart-connect {
+        z-index: 1;
         position: absolute;
         vertical-align: middle;
         height: 200px;
@@ -144,9 +151,10 @@ html body {
   html body .media .title {
     font-size: 60px;
     font-weight: 700;
-    padding-left: 100px; }
+    margin-left: 100px;
+    border-left: 10px #1163e9 solid; }
     html body .media .title .vertical-bar {
-      color: #1163e9; }
+      color: #fff; }
   html body .media .fp-tableCell {
     vertical-align: inherit !important; }
   html body .media .slick-prev:before, html body .media .slick-next:before {
@@ -161,8 +169,6 @@ html body {
   html body .media .news-papers-nav .slick-slide img {
     opacity: 0.5; }
   html body .media .news-papers-nav .slick-current img {
-    width: 250px;
-    transition: all 0.5s;
     opacity: 1; }
   html body .people {
     position: relative; }
@@ -171,9 +177,10 @@ html body {
     html body .people .title {
       font-size: 60px;
       font-weight: 700;
-      padding-left: 100px; }
+      margin-left: 100px;
+      border-left: 10px #1163e9 solid; }
       html body .people .title .vertical-bar {
-        color: #1163e9; }
+        color: #fff; }
     html body .people .person .member-name {
       font-size: 30px;
       font-weight: 700; }
@@ -191,17 +198,18 @@ html body {
       height: 250px; }
       html body .people .person-pic img {
         height: 300px;
-        position: absolute; }
+        position: absolute;
+        overflow: hidden; }
     html body .people .slick-current .overlay {
       position: relative;
       top: 0px;
       left: 0px;
       width: 100%;
-      height: 300px;
+      height: 250px;
       opacity: 0.5;
       background-color: #1163e9; }
     html body .people .slick-current img {
-      opacity: 0.5; }
+      opacity: 1; }
   html body .contact {
     background-color: #1163e9; }
     html body .contact .fp-tableCell {
