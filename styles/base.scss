@@ -325,6 +325,13 @@ html{
       padding-top:100px;
       padding-bottom: 0px;
       margin: 0;
+      .center-most-text-container{
+        position: absolute;
+        width: 100%;
+        top:50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+      }
     }
     .e-mail-container{
       padding: 0px;
