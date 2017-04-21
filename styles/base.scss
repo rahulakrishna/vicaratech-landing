@@ -12,6 +12,7 @@ html{
     overflow: hidden !important;
     font-family: $segoe-ui;
     .firstPage{
+
       .fp-tableCell{
         vertical-align: inherit !important;
       }
@@ -56,12 +57,13 @@ html{
             }
       }
       .down-arrow{
-        position: absolute;
+        position: fixed;
         left: 50%;
         -webkit-transform:translateX(-50%);
         transform: translateX(-50%);
         margin: auto;
         bottom: 5%;
+        z-index: 1000;
       }
     }
     .secondPage{
@@ -132,7 +134,7 @@ html{
           width: 90%;
           height: 100%;
         }
-        z-index: 2;
+        z-index: 1;
       }
       .smart-connect{
         z-index: 1;
@@ -343,6 +345,7 @@ html{
         padding: 0.25rem;
         height: 3rem;
         color:#fff;
+        padding-left: 10px;
       }
     }
     .subscribe-container{

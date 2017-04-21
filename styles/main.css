@@ -40,12 +40,13 @@ html body {
       margin: auto;
       top: 280px; }
   html body .firstPage .down-arrow {
-    position: absolute;
+    position: fixed;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     margin: auto;
-    bottom: 5%; }
+    bottom: 5%;
+    z-index: 1000; }
   html body .secondPage .content .text {
     font-size: 18px;
     vertical-align: middle;
@@ -100,7 +101,7 @@ html body {
         transform: translateX(-50%);
         margin: auto;
         top: -50px;
-        z-index: 2; }
+        z-index: 1; }
         html body .thirdPage .content .hand img {
           width: 90%;
           height: 100%; }
@@ -259,7 +260,8 @@ html body {
         right: 0px;
         padding: 0.25rem;
         height: 3rem;
-        color: #fff; }
+        color: #fff;
+        padding-left: 10px; }
     html body .contact .subscribe-container {
       padding-top: 0px; }
       html body .contact .subscribe-container .subscribe {
