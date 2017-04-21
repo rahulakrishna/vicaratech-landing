@@ -190,6 +190,7 @@ html{
     }
   }
   .media{
+    z-index: 4;
     .title{
       .vertical-bar{
         color: #fff;
@@ -231,6 +232,7 @@ html{
     }
   }
   .people{
+      z-index: 4;
       position: relative;
       .fp-tableCell{
         vertical-align: inherit !important;
@@ -288,6 +290,7 @@ html{
       }
   }
   .contact{
+    z-index: 4;
     background-color: $blue;
     .fp-tableCell{
       vertical-align: inherit !important;

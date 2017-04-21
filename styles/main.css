@@ -148,31 +148,34 @@ html body {
         color: #000000; }
         html body .fourthPage .content .smart-connect .connect-text {
           color: #1163e9; }
-  html body .media .title {
-    font-size: 60px;
-    font-weight: 700;
-    margin-left: 100px;
-    border-left: 10px #1163e9 solid; }
-    html body .media .title .vertical-bar {
-      color: #fff; }
-  html body .media .fp-tableCell {
-    vertical-align: inherit !important; }
-  html body .media .slick-prev:before, html body .media .slick-next:before {
-    color: #1163e9 !important; }
-  html body .media .news-paper-article {
-    text-align: center;
-    margin-top: 200px; }
-  html body .media .news-paper-name {
-    outline: none; }
-    html body .media .news-paper-name img {
-      width: 200px;
-      margin: auto;
-      transition: all 0.5s; }
-  html body .media .news-papers-nav .slick-slide img {
-    opacity: 0.5; }
-  html body .media .news-papers-nav .slick-current img {
-    opacity: 1; }
+  html body .media {
+    z-index: 4; }
+    html body .media .title {
+      font-size: 60px;
+      font-weight: 700;
+      margin-left: 100px;
+      border-left: 10px #1163e9 solid; }
+      html body .media .title .vertical-bar {
+        color: #fff; }
+    html body .media .fp-tableCell {
+      vertical-align: inherit !important; }
+    html body .media .slick-prev:before, html body .media .slick-next:before {
+      color: #1163e9 !important; }
+    html body .media .news-paper-article {
+      text-align: center;
+      margin-top: 200px; }
+    html body .media .news-paper-name {
+      outline: none; }
+      html body .media .news-paper-name img {
+        width: 200px;
+        margin: auto;
+        transition: all 0.5s; }
+    html body .media .news-papers-nav .slick-slide img {
+      opacity: 0.5; }
+    html body .media .news-papers-nav .slick-current img {
+      opacity: 1; }
   html body .people {
+    z-index: 4;
     position: relative; }
     html body .people .fp-tableCell {
       vertical-align: inherit !important; }
@@ -213,6 +216,7 @@ html body {
     html body .people .slick-current img {
       opacity: 1; }
   html body .contact {
+    z-index: 4;
     background-color: #1163e9; }
     html body .contact .fp-tableCell {
       vertical-align: inherit !important; }
