@@ -233,7 +233,8 @@ html body {
         left: 0px;
         right: 0px;
         padding: 0.25rem;
-        height: 3rem; }
+        height: 3rem;
+        color: #fff; }
     html body .contact .subscribe-container {
       padding-top: 0px; }
       html body .contact .subscribe-container .subscribe {
@@ -258,5 +259,8 @@ html body {
         float: right; }
         html body .contact .custom-footer .social-icons i {
           padding-right: 10px; }
+
+#fp-nav ul li a span {
+  background-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

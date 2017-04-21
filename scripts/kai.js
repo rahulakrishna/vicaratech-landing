@@ -2,16 +2,6 @@ $(document).ready(function () {
   console.log('Kai working and all.')
   console.log(window.location.hash);
 
-  if(window.location.hash=='#landing'){
-    console.log('Got inside till here');
-    $('.fp-slidesNav ul li a.active span').css({
-      backgroundColor:'#fff'
-    })
-    $('#fp-nav ul li a span').css({
-      backgroundColor:'#fff'
-    })
-  }
-
   $('.news-papers').slick({
     centerMode:true,
     centerPadding:'300px',
@@ -214,6 +204,19 @@ $(document).ready(function () {
 
     wht=$(window).height();
     $(window).scroll(function () {
+        if(window.location.hash!='#landing'){
+          console.log('Got inside till here');
+          $('#fp-nav ul li a span').css({
+            'background':'#000',
+            'transition':'all 0.5s'
+          });
+        }
+        else{
+          $('#fp-nav ul li a span').css({
+            'background':'#fff',
+            'transition':'all 0.5s'
+          });
+        }
         console.log($(window).scrollTop(),wht);
         if($(window).scrollTop()>(wht-200)){
           firstAnim();

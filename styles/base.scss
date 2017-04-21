@@ -310,6 +310,7 @@ html{
         right: 0px;
         padding: 0.25rem;
         height: 3rem;
+        color:#fff;
       }
     }
     .subscribe-container{
@@ -343,4 +344,9 @@ html{
     }
   }
 }
+}
+
+
+#fp-nav ul li a span{
+  background-color: #fff;
 }
