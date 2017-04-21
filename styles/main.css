@@ -162,10 +162,12 @@ html body {
   html body .media .news-paper-article {
     text-align: center;
     margin-top: 200px; }
-  html body .media .news-paper-name img {
-    width: 200px;
-    margin: auto;
-    transition: all 0.5s; }
+  html body .media .news-paper-name {
+    outline: none; }
+    html body .media .news-paper-name img {
+      width: 200px;
+      margin: auto;
+      transition: all 0.5s; }
   html body .media .news-papers-nav .slick-slide img {
     opacity: 0.5; }
   html body .media .news-papers-nav .slick-current img {
