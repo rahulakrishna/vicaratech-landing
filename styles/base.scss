@@ -240,9 +240,16 @@ html{
       }
     }
   }
+  .social-icons{
+    font-size: 20px !important;
+  }
   .people{
       z-index: 4;
       position: relative;
+      height: 100%;
+      .social-icons{
+        color:#757575;
+      }
       .fp-tableCell{
         vertical-align: inherit !important;
       }
@@ -259,6 +266,7 @@ html{
         .member-name{
           font-size: 30px;
           font-weight: 700;
+          color:$blue;
         }
         .member-desc{
           font-size: 24px;
@@ -273,6 +281,14 @@ html{
           padding-left: 5px;
           padding-right: 5px;
         }
+      }
+      @media(min-height: 880){
+        .people-nav{
+          top:20%;
+        }
+      }
+      .people-nav{
+        top:10%;
       }
       .person-pic{
         height: 250px;

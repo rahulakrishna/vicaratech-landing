@@ -182,9 +182,14 @@ html body {
       opacity: 0.5; }
     html body .media .news-papers-nav .slick-current img {
       opacity: 1; }
+  html body .social-icons {
+    font-size: 20px !important; }
   html body .people {
     z-index: 4;
-    position: relative; }
+    position: relative;
+    height: 100%; }
+    html body .people .social-icons {
+      color: #757575; }
     html body .people .fp-tableCell {
       vertical-align: inherit !important; }
     html body .people .title {
@@ -196,7 +201,8 @@ html body {
         color: #fff; }
     html body .people .person .member-name {
       font-size: 30px;
-      font-weight: 700; }
+      font-weight: 700;
+      color: #1163e9; }
     html body .people .person .member-desc {
       font-size: 24px;
       color: #757575;
@@ -207,6 +213,11 @@ html body {
     html body .people .person i {
       padding-left: 5px;
       padding-right: 5px; }
+    @media (min-height: 880) {
+      html body .people .people-nav {
+        top: 20%; } }
+    html body .people .people-nav {
+      top: 10%; }
     html body .people .person-pic {
       height: 250px; }
       html body .people .person-pic img {
