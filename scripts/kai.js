@@ -204,7 +204,7 @@ $(document).ready(function () {
 
     wht=$(window).height();
     $(window).scroll(function () {
-        if(window.location.hash!='#landing'){
+        if(window.location.hash!='#landing' && window.location.hash!='#contact'){
           console.log('Got inside till here');
           $('#fp-nav ul li a span').css({
             'background':'#000',
